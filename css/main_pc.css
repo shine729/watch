@@ -1,0 +1,97 @@
+@charset 'utf-8';
+/* CSS Document */
+
+/* reset (pc) */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+main {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+.mobile {display: none !important;}
+.hidden {position: absolute; left: -9999px;}
+br.only-m {content: '';}
+br.only-m:after {content: '\00a0';}
+
+
+html{background-color: #222222;}
+p{color:white}
+.wrap{max-width:1024px; width:100%; margin: 0 auto; box-sizing: border-box; }
+h2{text-align:center;}
+h1{color:red; font-size: 45px; text-align: center;}
+
+/* section1 */
+.swiper-container {
+	width:100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.swiper-slide {
+	text-align:center;
+	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+	background-color:#fff;
+	border:5px solid silver;
+	border-radius:5px;
+	box-shadow:0 0 10px silver inset;
+	box-sizing:border-box; /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
+	/* 아래에 있는 실행가능한 소스를 가지고 실험해 보세요 */
+}
+
+
+/* section2 */
+#section2{position:relative; height:800px; padding:10% 0; background-color: #222222; color:white;} 
+#section2 h1{margin-bottom:5%;}
+#section2 #p_wrap{position: absolute; text-align: left; left:53%; top: 5%;}
+#about_wrap{ position: absolute; width: 100%; height: 850px; top: 50%; transform: translate(-50%, -50%); box-sizing: border-box;
+max-width: 1200px; margin-left: 50%; }
+#small{border:3px solid grey; position:absolute; top:5%;  left:15%; width:35%; z-index: 2; background-size: cover;  overflow: hidden; background-repeat: no-repeat;}
+#big{position:absolute; width:80%; bottom:5%; left:50%; transform:translate(-50%,0); background-size: cover; background-position: right;
+overflow: hidden;}
+#section2 img{ width:100%;}
+
+
+/* section3 */
+#section3 div{background-color: gray; height:500px; background: url("../img/Satellite.jpg") no-repeat; background-position: center; background-size:cover ;}
+
+
+/* section4 */
+#section4{  background-color: #151515;  padding:10% 0;}
+#section4_wrap{  max-width:1200px; margin: auto;  box-sizing: border-box; }
+#section4 p{text-align: center; margin-bottom:5%;}
+.watch{background-color:#222222;}
+
+
+/* section5 */
+#section5{padding:10% 0;}
+.gallerySection{display: flex; color:white; padding:2%; }
+#img1{ background: url("../img/news1.jpg") no-repeat; background-size: cover; background-position: center; flex:1;}
+#img2{ background: url("../img/news2.jpg") no-repeat; flex:2; background-size: cover; background-position: center;  flex:1;}
+.p{ height:250px; flex:1.5; box-sizing: border-box; padding:3%; background-color: #151515;}
+.p h2{padding-bottom:3%;}
+#section5 p{text-align: center; margin-bottom: 5%;}
+
+
+/* section6 */
+#section6{border:2px solid yellow; padding:5%; background-color: black;}
+form{text-align: center;}
+#section6 h1{margin-bottom:3%;}
+#fname{padding: 1% 15%;}
+#submit{padding: 1% 5%;}
+
+
+/* footer */
+footer{border:2px solid red; width:100%; height:300px;}

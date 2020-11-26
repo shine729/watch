@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('※'),
+      url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+      url('../font/NotoSansKR-Regular.woff') format('woff'),
+      url('../font/NotoSansKR-Regular.otf') format('opentype');
+  }

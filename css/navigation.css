@@ -1,0 +1,10 @@
+.blind{display:none}
+li{list-style: none;}
+a{text-decoration: none; color:white;}
+
+#logo a{background:url("../img/logo.png") no-repeat; width:75px; height:75px; background-size: contain; position:absolute; left:5%; top:0;}
+#skip_nav{position:fixed; top:-41px; left:0; width:100%; line-height:40px; color:white; text-align: center; transition:top 0.3s; z-index:100000; }
+#skip_nav:focus{top:0;}  
+#mainnav li{float:left; margin-right: 50px;}
+#gnb{height:90px;}
+#mainnav{position:absolute; left:50%; margin-left:-167px; text-align: center;}
