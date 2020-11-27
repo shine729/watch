@@ -51,6 +51,9 @@ h1{color:red; font-size: 45px; text-align: center;}
 	/* 아래에 있는 실행가능한 소스를 가지고 실험해 보세요 */
 }
 
+/* section1 */
+.swiper-slide h1{color:#dcdfeb; position:absolute; left:200px; font-size: 35px; text-align: left;}
+.swiper-slide h1 strong{ font-size: 75px;}
 
 /* section2 */
 #section2{position:relative; height:800px; padding:10% 0; background-color: #222222; color:white;} 
@@ -58,7 +61,7 @@ h1{color:red; font-size: 45px; text-align: center;}
 #section2 #p_wrap{position: absolute; text-align: left; left:53%; top: 5%;}
 #about_wrap{ position: absolute; width: 100%; height: 850px; top: 50%; transform: translate(-50%, -50%); box-sizing: border-box;
 max-width: 1200px; margin-left: 50%; }
-#small{border:3px solid grey; position:absolute; top:5%;  left:15%; width:35%; z-index: 2; background-size: cover;  overflow: hidden; background-repeat: no-repeat;}
+#small{border:3.5px solid grey; position:absolute; top:5%;  left:15%; width:35%; z-index: 2; background-size: cover;  overflow: hidden; background-repeat: no-repeat;}
 #big{position:absolute; width:80%; bottom:5%; left:50%; transform:translate(-50%,0); background-size: cover; background-position: right;
 overflow: hidden;}
 #section2 img{ width:100%;}
@@ -72,7 +75,7 @@ overflow: hidden;}
 #section4{  background-color: #151515;  padding:10% 0;}
 #section4_wrap{  max-width:1200px; margin: auto;  box-sizing: border-box; }
 #section4 p{text-align: center; margin-bottom:5%;}
-.watch{background-color:#222222;}
+.watch{background-color:#222222; padding:50px 0;}
 
 
 /* section5 */
@@ -86,7 +89,7 @@ overflow: hidden;}
 
 
 /* section6 */
-#section6{border:2px solid yellow; padding:5%; background-color: black;}
+#section6{ padding:5%; background-color: black;}
 form{text-align: center;}
 #section6 h1{margin-bottom:3%;}
 #fname{padding: 0.5% 15%;}
@@ -94,7 +97,7 @@ form{text-align: center;}
 
 
 /* footer */
-footer{border:2px solid red; width:100%; height:250px; color:#F2F2F2; position: relative;}
+footer{ width:100%; height:250px; color:#F2F2F2; position: relative;}
 .ft_cont_box{padding-top:50px; font-size: 15px; width:1024px;  margin: auto; }
 .ft_cont_box ul li{display:inline-block}
 .ft_cont_box > ul{text-align: center;}
@@ -102,4 +105,4 @@ footer{border:2px solid red; width:100%; height:250px; color:#F2F2F2; position: 
 .ft_info dt,.ft_info dd,.ft_info dl{display:inline-block}
 .ft_info dl{margin-right:15px;}
 .ft_sns{display:inline-block; margin-right: 10px;}
-.ft_cont_right{position:absolute; width:150px; right:0; top:50px;}
+.ft_cont_right{position:absolute; width:160px; right:0; top:50px;}

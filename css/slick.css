@@ -67,16 +67,17 @@
 .slick-slide {
   display: none;
   float: left;
-
+  margin: 0 20px;
   height: 100%;
   min-height: 1px;
 }
+
 [dir="rtl"] .slick-slide {
   float: right;
 }
 .slick-slide img {
   display: block;
-  width:100%;
+  width:90%;
 }
 .slick-slide.slick-loading img {
   display: none;
@@ -100,3 +101,4 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
