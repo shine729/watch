@@ -21,88 +21,89 @@ br.only-m {content: '';}
 br.only-m:after {content: '\00a0';}
 
 
+
+/* common */
 html{background-color: #222222;}
-p{color:white}
+p{color:#e7e7e7;}
 .wrap{max-width:1024px; width:100%; margin: 0 auto; box-sizing: border-box; }
 h2{text-align:center;}
-h1{color:red; font-size: 45px; text-align: center;}
+h1{color:red; font-size: 45px; text-align: center; }
+.clearfix::before,.clearfix::after{content:""; display:block; clear: both;}
+.swiper-pagination-bullet-active{background-color: #e7e7e7 !important}
+
+
 
 /* section1 */
-.swiper-container {
-	width:100%;
-	height: 800px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-	box-sizing: border-box;
-}
+.swiper-container {width:100%; height:100vh; background-repeat: no-repeat; background-size: cover; background-position: center;
+	overflow: hidden; box-sizing: border-box; }
+.swiper-slide { text-align:center; background-color:#fff; box-sizing:border-box; width:100%; }
+.swiper-slide h1{color:#e7e7e7; position:absolute; left:160px; top: 50%; font-size: 35px; text-align: left;}
+.swiper-slide h1 strong{ font-size: 65px; }
 
-.swiper-slide {
-	text-align:center;
-	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
-	align-items:center; /* 위아래 기준 중앙정렬 */
-	justify-content:center; /* 좌우 기준 중앙정렬 */
-	background-color:#fff;
-	border:5px solid silver;
-	border-radius:5px;
-	box-shadow:0 0 10px silver inset;
-	box-sizing:border-box; /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
-	/* 아래에 있는 실행가능한 소스를 가지고 실험해 보세요 */
-}
 
-/* section1 */
-.swiper-slide h1{color:#dcdfeb; position:absolute; left:200px; font-size: 35px; text-align: left;}
-.swiper-slide h1 strong{ font-size: 75px;}
 
 /* section2 */
-#section2{position:relative; height:800px; padding:10% 0; background-color: #222222; color:white;} 
-#section2 h1{margin-bottom:5%;}
-#section2 #p_wrap{position: absolute; text-align: left; left:53%; top: 5%;}
-#about_wrap{ position: absolute; width: 100%; height: 850px; top: 50%; transform: translate(-50%, -50%); box-sizing: border-box;
-max-width: 1200px; margin-left: 50%; }
-#small{border:3.5px solid grey; position:absolute; top:5%;  left:15%; width:35%; z-index: 2; background-size: cover;  overflow: hidden; background-repeat: no-repeat;}
-#big{position:absolute; width:80%; bottom:5%; left:50%; transform:translate(-50%,0); background-size: cover; background-position: right;
+#section2{position:relative; height:900px; background-color: #222222; color:#e7e7e7; margin-top: 150px;} 
+#section2 #p_wrap{position: absolute; text-align: left; left:50%; top: px;}
+#about_wrap{position: relative; width:1270px; height:735px; margin:0 auto;}
+#small{border:5px solid grey; position:absolute; top:0;  left:18%; width:370px; z-index: 2; background-size: cover;  overflow: hidden; background-repeat: no-repeat;}
+#big{position:absolute; width:900px; bottom:5%; left:50%; transform:translate(-50%,0); background-size: cover; background-position: right;
 overflow: hidden;}
 #section2 img{ width:100%;}
 
 
 /* section3 */
-#section3 div{background-color: gray; height:500px; background: url("../img/Satellite.jpg") no-repeat; background-position: center; background-size:cover ;}
+#section3{position: relative; height:500px; background: url("../img/Satellite.jpg") no-repeat; background-position: center; background-size:cover;
+cursor: pointer;}
+#section3 h2{color:#e7e7e7; font-size: 55px; }
+.section3_text{position: absolute; top:50%; width: 100%; text-align: center; transform: translate(0,-50%); }
 
 
 /* section4 */
-#section4{  background-color: #151515;  padding:10% 0;}
-#section4_wrap{  max-width:1200px; margin: auto;  box-sizing: border-box; }
-#section4 p{text-align: center; margin-bottom:5%;}
-.watch{background-color:#222222; padding:50px 0;}
+#section4{  background-color: #151515; height:800px; position: relative;}
+#section4 h1{padding-top:90px}
+#section4_wrap{  max-width:1200px; margin: auto; box-sizing: border-box; }
+#section4_wrap > p{text-align: center; margin-bottom:80px;}
+.watch{background-color:#222222; padding:30px 0;}
+.watch p{text-align: center; padding-top:20px; color:#e7e7e7;}
+.p_btn{text-align: center;}
+.p_btn button{background:#222222; border:none; color:#e7e7e7; border:1px solid #e7e7e7; width:150px; height:30px}
+
 
 
 /* section5 */
-#section5{padding:10% 0;}
-.gallerySection{display: flex; color:white; padding:2%; }
-#img1{ background: url("../img/news1.jpg") no-repeat; background-size: cover; background-position: center; flex:1;}
-#img2{ background: url("../img/news2.jpg") no-repeat; flex:2; background-size: cover; background-position: center;  flex:1;}
-.p{ height:250px; flex:1.5; box-sizing: border-box; padding:3%; background-color: #151515;}
-.p h2{padding-bottom:3%;}
-#section5 p{text-align: center; margin-bottom: 5%;}
+#section5{position: relative; height:900px; background: #222222;}
+#section5 h1{padding-top:90px;}
+#section5 div:first-child{margin-bottom:15px;}
+.gallerySection > div:first-child{float:left; width:35%; height:250px;  box-sizing: border-box; }
+.gallerySection > div:last-child{float:right; width:65%; height:250px;  box-sizing: border-box; }
+#img1{ background: url("../img/news1.jpg") no-repeat; background-size: cover; background-position: center;}
+#img2{ background: url("../img/news2.jpg") no-repeat; background-size: cover; background-position: center; }
+.p{ height:250px;  box-sizing: border-box; padding:35px; background-color: #151515; }
+.p h2{padding-bottom:3%; color:#e7e7e7;}
+#section5 p{text-align: center; margin-bottom: 5%; color:#e7e7e7;}
+
 
 
 /* section6 */
-#section6{ padding:5%; background-color: black;}
+#section6{ padding:70px; background-color: black;}
 form{text-align: center;}
 #section6 h1{margin-bottom:3%;}
 #fname{padding: 0.5% 15%;}
 #submit{padding: 0.5% 5%;}
 
 
+
 /* footer */
-footer{ width:100%; height:250px; color:#F2F2F2; position: relative;}
-.ft_cont_box{padding-top:50px; font-size: 15px; width:1024px;  margin: auto; }
+#footer{  color:#bdbdbd; position: relative;}
+.ft_cont_box{padding-top:100px; font-size: 15px; width:1024px;  margin: auto; }
 .ft_cont_box ul li{display:inline-block}
 .ft_cont_box > ul{text-align: center;}
 .ft_info{text-align: center; padding-top: 15px; line-height: 25px;}
 .ft_info dt,.ft_info dd,.ft_info dl{display:inline-block}
 .ft_info dl{margin-right:15px;}
 .ft_sns{display:inline-block; margin-right: 10px;}
-.ft_cont_right{position:absolute; width:160px; right:0; top:50px;}
+.ft_cont_right{position:absolute; right:30px; top:50px;}
+.ft_logo{text-align: center; height:110px; padding: 30px;}
+.ft_logo img{width:auto; height: 100%;}
+.copyright{text-align: center; padding-bottom: 50px; display: block; color: #bdbdbd;}

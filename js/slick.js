@@ -3033,3 +3033,84 @@
     };
 
 }));
+
+ var coverflowSetting = {
+            slideShadows : true, // 슬라이더 그림자 : 3D 효과를 강조하기 위한 회전시 흐릿한 효과
+            rotate : 50, // 슬라이더 회전 각 : 클수록 슬라이딩시 회전이 커짐
+            stretch : -800, // 슬라이더간 거리(픽셀) : 클수록 슬라이더가 서로 많이 겹침
+            depth : 500, // 깊이 효과값 : 클수록 멀리있는 느낌이 강해짐
+            modifier : 1, // 효과 배수 : 위 숫자값들에 이 값을 곱하기 처리하여 효과를 강하게 처리함
+            }
+        
+        var myswiper = null;
+        
+        function init(){
+        
+            if(myswiper != null) myswiper.destroy();
+        
+            myswiper = new Swiper( '.swiper-container', {
+                effect : 'coverflow', // 커버플로우 효과 사용
+                coverflowEffect : coverflowSetting, // 커버플로우 설정
+                loop : true, // 슬라이드 반복
+        
+                autoplay : { // 자동 재생
+                    delay : 3000, // 딜레이 3초
+                },
+                speed : 2000, // 슬라이드 속도 2초
+        
+                navigation : {
+                    nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+                    prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+                },
+                pagination : { // 페이징 설정
+                    el : '.swiper-pagination',
+                    clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+                },
+            });
+        }
+        
+        init();
+
+
+        $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+    {
+        breakpoint: 1024,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+        }
+    },
+    {
+        breakpoint: 600,
+        settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+});
+
+
+
+
+
+
+

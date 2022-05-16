@@ -1,10 +1,29 @@
 .blind{display:none}
 li{list-style: none;}
 a{text-decoration: none; color:white;}
+.container{width: 1200px; margin:0 auto;}
+img{width:100%;}
 
-#logo a{background:url("../img/logo.png") no-repeat; width:75px; height:75px; background-size: contain; position:absolute; left:5%; top:0;}
+#logo{width:55px; height:70px; float: left;}
+#logo a{background:url("../img/logo.png") no-repeat center/contain; display:inline-block; width:100%; height:100%;}
 #skip_nav{position:fixed; top:-41px; left:0; width:100%; line-height:40px; color:white; text-align: center; transition:top 0.3s; z-index:100000; }
 #skip_nav:focus{top:0;}  
-#mainnav li{float:left; margin-right: 50px;}
-#gnb{height:90px;}
-#mainnav{position:absolute; left:50%; margin-left:-167px; text-align: center;}
+#gnb{ position: fixed; width:100%; background: black; z-index: 10; box-sizing: border-box; padding:10px;}
+#mainnav{ color:white;  position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%); }
+#mainnav li{ padding: 8px 15px; margin: 0 10px; cursor: pointer; float:left;}
+#mainnav li.on{color:red}
+.menuview{display: none;}
+.icon{float: right;}
+.icon div{float:left; width:25px; line-height:70px; margin-left: 25px;}
+.menu_bar{display: none; background: black; width:100%; height:295px; position: fixed; top:0; left:0; padding:15px; box-sizing: border-box;
+text-align: center; color:white}
+.menu_bar li{padding:15px 0;}
+.menu_bar li.on{color:red}
+
+@media screen and (max-width:1024px){
+    #mainnav{display: none; text-align: center; width: 100%; position: absolute; top:80px; left:-10px; transform: translatex(0); box-sizing: border-box;}
+    .menuview{display:block; position: absolute; top:25px; right:30px; border:none; background: transparent; z-index: 1000; }
+    .menuview::before { content: "≡"; color: white; display: block;  font-size: 30px;}
+};
+
+
